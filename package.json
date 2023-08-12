@@ -1,0 +1,36 @@
+{
+  "name": "zmat-cli",
+  "version": "1.0.0",
+  "description": "zmat Cli for every thing",
+  "main": "src/app.js",
+  "bin": {
+    "zmat24/zmat-cli": "bin/zmat-cli",
+    "zmat-cli": "bin/zmat-cli"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zmat24/zmat-cli.git"
+  },
+  "keywords": [
+    "cli",
+    "zmat-cli",
+    "js-cli",
+    "react",
+    "vue"
+  ],
+  "author": "zmat24",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zmat24/zmat-cli/issues"
+  },
+  "homepage": "https://github.com/zmat24/zmat-cli#readme",
+  "dependencies": {
+    "esm": "^3.2.25"
+  }
+}
