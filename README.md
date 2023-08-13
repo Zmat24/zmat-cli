@@ -28,11 +28,44 @@ npm i zmat-cli -g
 ```
 <br>
 
-### this command create some folders and filse to make coding easier for you
-<img src="https://blokchainology.com/zmat-cli/zmat-cli-site.png" alt="zmat-cli" />
-
-| cammand       | short cut | do                     |
+| cammand       | short cut | decsription            |
 |:--------------|:---------:|-----------------------:|
 | --version     | -v        | Show Version of Pakage |
 | --help        | -h        | Show Help              |
 | --create-site | --site    | Create File and Folder |
+
+<br>
+this command create some folders and filse to make coding easier for you
+
+```CONSOLE
+zmat-cli --create-site
+```
+or
+```CONSOLE
+zmat-cli --site
+```
+<img src="https://blokchainology.com/zmat-cli/zmat-cli-site.png" alt="zmat-cli" />
+<hr><hr>
+<br>
+this command Show Package Version of use
+
+```CONSOLE
+zmat-cli --version
+```
+or
+```CONSOLE
+zmat-cli -v
+```
+<img src="https://blokchainology.com/zmat-cli/zmat-cli-site.png" alt="zmat-cli" />
+<hr><Hr>
+<br>
+this command Show Package help text
+
+```CONSOLE
+zmat-cli --help
+```
+or
+```CONSOLE
+zmat-cli -help
+```
+<img src="https://blokchainology.com/zmat-cli/zmat-cli-site.png" alt="zmat-cli" />
