@@ -6,7 +6,9 @@ const args = arg(
     "--create-site": Boolean,
     "--site"       : "--create-site",
     "--version"    : Boolean,
-    "-v"           : "--version"
+    "-v"           : "--version",
+    "--help"    : Boolean,
+    "-h"           : "--help",
 },
     {
         argv: rawArgs.slice(2),
@@ -15,6 +17,8 @@ const args = arg(
 return {
     site: args['--create-site'] || args['--site'] || false,
     version: args['--version'] || args['-v'] || false,
+    help: args['--help'] || args['-h'] || false,
+    
 };
 }
 
@@ -51,6 +55,15 @@ export function cli(args) {
         });
     }
     if(options.version){
-        console.log("Zmat-cli: 0.0.1 Version");
+        console.log("Zmat-cli: 0.0.3 Version");
+    }
+    if(options.help){
+        console.log(`Zmat-cli: help
+
+        -site : --create-site    : => make new project
+        -v    : --version "      : => show Version
+        -h    : --help "         : => show Help
+
+        `);
     }
 }
