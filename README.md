@@ -1,4 +1,4 @@
-# zmat-cli --> v.0.0.1
+# zmat-cli --> v.0.0.3
 
 - [Why Use zmat-cli](#Why-Use-zmat-cli)
 - [How To Use ?](#How-To-Use)
@@ -30,3 +30,9 @@ npm i zmat-cli -g
 
 ### this command create some folders and filse to make coding easier for you
 <img src="https://blokchainology.com/zmat-cli/zmat-cli-site.png" alt="zmat-cli" />
+
+| cammand       | short cut | do                     |
+|:--------------|:---------:|-----------------------:|
+| --version     | -v        | Show Version of Pakage |
+| --help        | -h        | Show Help              |
+| --create-site | --site    | Create File and Folder |
