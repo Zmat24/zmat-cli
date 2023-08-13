@@ -56,7 +56,7 @@ or
 ```CONSOLE
 zmat-cli -v
 ```
-<img src="https://blokchainology.com/zmat-cli/zmat-cli-site.png" alt="zmat-cli" />
+<img src="https://blokchainology.com/zmat-cli/zmat-cli-v.png" alt="zmat-cli" />
 <hr><Hr>
 <br>
 this command Show Package help text
@@ -68,4 +68,4 @@ or
 ```CONSOLE
 zmat-cli -help
 ```
-<img src="https://blokchainology.com/zmat-cli/zmat-cli-site.png" alt="zmat-cli" />
+<img src="https://blokchainology.com/zmat-cli/zmat-cli-help.png" alt="zmat-cli" />
