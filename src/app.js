@@ -1,5 +1,8 @@
 import arg from 'arg';
 const { exec } = require("child_process");
+const fs = require("fs");
+const {html , css} = require("./exports")
+
 function parse(rawArgs) {
 const args = arg(
 {
@@ -25,37 +28,30 @@ return {
 export function cli(args) {
     let options = parse(args);
     if(options.site){
-        exec("mkdir js css images fonts", (error, stdout) => {
-            if (error) {
-                console.log(`Zmat-cli:: error: ${error.message}`);
-                return;
-            }
-            console.log(`Zmat-cli: ${stdout || "created"}`);
+        fs.mkdirSync("images" , function (err) {
+            if (err) throw err;               console.log('create images ...');
         });
-        exec("echo /* created by zmat-cli */ > css/style.css ", (error, stdout) => {
-            if (error) {
-                console.log(`Zmat-cli:: error: ${error.message}`);
-                return;
-            }
-            console.log(`Zmat-cli: ${stdout || "created"}`);
+        fs.mkdirSync("fonts" , function (err) {
+            if (err) throw err;               console.log('Results Received');
         });
-        exec("echo /* created by zmat-cli */ > js/script.js ", (error, stdout) => {
-            if (error) {
-                console.log(`Zmat-cli:: error: ${error.message}`);
-                return;
-            }
-            console.log(`Zmat-cli: ${stdout || "created"}`);
+        fs.mkdirSync("js" , function (err) {
+            if (err) throw err;               console.log('Results Received');
         });
-        exec(`echo ^<!-- Created By Zmat-cli --^> > index.html `, (error, stdout) => {
-            if (error) {
-                console.log(`Zmat-cli:: error: ${error.message}`);
-                return;
-            }
-            console.log(`Zmat-cli: ${stdout || "created"}`);
+        fs.writeFile('./js/index.js', '/* created by zmat-cli */', function (err) {
+            if (err) throw err;               console.log('Results Received');
+        }); 
+        fs.mkdirSync("css" , function (err) {
+            if (err) throw err;               console.log('Results Received');
         });
+        fs.writeFile('./css/style.css', css , function (err) {
+            if (err) throw err;               console.log('Results Received');
+        }); 
+        fs.writeFile('./index.html', html , function (err) {
+            if (err) throw err;               console.log('Results Received');
+        }); 
     }
     if(options.version){
-        console.log("Zmat-cli: 0.0.3 Version");
+        console.log("Zmat-cli: 0.0.5 Version");
     }
     if(options.help){
         console.log(`Zmat-cli: help
