@@ -1,4 +1,4 @@
-# zmat-cli --> v.0.0.3
+# zmat-cli --> v.0.0.5
 
 - [Why Use zmat-cli](#Why-Use-zmat-cli)
 - [How To Use ?](#How-To-Use)
@@ -66,6 +66,6 @@ zmat-cli --help
 ```
 or
 ```CONSOLE
-zmat-cli -help
+zmat-cli -h
 ```
 <img src="https://blokchainology.com/zmat-cli/zmat-cli-help.png" alt="zmat-cli" />
