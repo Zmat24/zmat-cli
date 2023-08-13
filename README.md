@@ -29,4 +29,4 @@ npm i zmat-cli -g
 <br>
 
 ### this command create some folders and filse to make coding easier for you
-<img src="https://blokchainology.com/zmat-cli/zmat-cli.png" alt="zmat-cli" />
+<img src="https://blokchainology.com/zmat-cli/zmat-cli-site.png" alt="zmat-cli" />
