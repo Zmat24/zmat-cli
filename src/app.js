@@ -4,13 +4,17 @@ function parse(rawArgs) {
 const args = arg(
 {
     "--create-site": Boolean,
+    "--site"       : "--create-site",
+    "--version"    : Boolean,
+    "-v"           : "--version"
 },
     {
         argv: rawArgs.slice(2),
     }
 );
 return {
-    site: args['--create-site'] || false,
+    site: args['--create-site'] || args['--site'] || false,
+    version: args['--version'] || args['-v'] || false,
 };
 }
 
@@ -45,5 +49,8 @@ export function cli(args) {
             }
             console.log(`Zmat-cli: ${stdout || "created"}`);
         });
+    }
+    if(options.version){
+        console.log("Zmat-cli: 0.0.1 Version");
     }
 }
