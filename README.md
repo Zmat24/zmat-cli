@@ -69,3 +69,11 @@ or
 zmat-cli -h
 ```
 <img src="https://blokchainology.com/zmat-cli/zmat-cli-help.png" alt="zmat-cli" />
+<hr><Hr>
+<br>
+
+# and after that actully this is a POWER
+
+<br>
+
+<img src="https://blokchainology.com/zmat-cli/zmat-cli-npm.png" alt="zmat-cli" />
