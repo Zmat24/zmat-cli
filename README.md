@@ -77,3 +77,14 @@ zmat-cli -h
 <br>
 
 <img src="https://blokchainology.com/zmat-cli/zmat-cli-npm.png" alt="zmat-cli" />
+<hr><Hr>
+<br>
+
+
+<em><b>created by zmat24</b> :)</em><br><br>
+<a href="https://github.com/matinsoleymni">
+    <img src="https://img.shields.io/badge/Matin Soleymani-purple?style=flat-square&logo=github">
+</a> 
+<a href="https://github.com/zeynabkhayyati">
+    <img src="https://img.shields.io/badge/Zeynab Khayyati-olive?style=flat-square&logo=github">
+</a> 
