@@ -1,4 +1,4 @@
-# zmat-cli --> v.0.0.5
+# zmat-cli --> v.0.1.0
 
 - [Why Use zmat-cli](#Why-Use-zmat-cli)
 - [How To Use ?](#How-To-Use)
