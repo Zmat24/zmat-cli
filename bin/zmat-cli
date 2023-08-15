@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-
-require = require('esm')(module /*, options*/);
-require('../src/app').cli(process.argv);
+let args = process.argv.splice(2);
+const cli = require('../src/app');
+cli.cli(args)

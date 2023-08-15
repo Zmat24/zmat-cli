@@ -1,3 +1,5 @@
+const cdn = require('./cdns');
+// const app = require('./app');
 const html = 
 `<!-- created by zmat-cli -->
 
@@ -29,4 +31,4 @@ const help =` Zmat-cli: help
         -v    : --version "      : => show Version
         -h    : --help "         : => show Help
         `
-module.exports = {html , css , help} ;
+module.exports = {html , css , help } ;

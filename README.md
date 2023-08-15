@@ -1,10 +1,10 @@
-# zmat-cli --> v.0.0.5
+# zmat-cli --> v.0.1.0
 
 - [Why Use zmat-cli](#Why-Use-zmat-cli)
 - [How To Use ?](#How-To-Use)
 <br>
 
-# Why-Use-24.css?
+# Why-Use-Zmat-cli?
 
 1. Very Esey
 2. Very Fast
@@ -28,11 +28,11 @@ npm i zmat-cli -g
 ```
 <br>
 
-| cammand       | short cut | decsription            |
-|:--------------|:---------:|-----------------------:|
-| --version     | -v        | Show Version of Pakage |
-| --help        | -h        | Show Help              |
-| --create-site | --site    | Create File and Folder |
+| cammand       | short cut | decsription                 |
+|:--------------|:---------:|----------------------------:|
+| --version     | -v        | Show Version of Pakage      |
+| --help        | -h        | Show Help                   |
+| --create-site | -site     | Create File and Folder      |
 
 <br>
 this command create some folders and filse to make coding easier for you
@@ -65,6 +65,7 @@ this command Show Package help text
 zmat-cli --help
 ```
 or
+
 ```CONSOLE
 zmat-cli -h
 ```
