@@ -72,7 +72,7 @@ zmat-cli -h
 <hr><Hr>
 <br>
 
-# and after that actully this is a POWER
+# and after that actually this is a POWER
 
 <br>
 
