@@ -23,7 +23,10 @@ const html =
 
 const css = 
 `/* created by zmat-cli */
-body{background-color:#3b3b3b;display:flex;justify-content:center;align-items:center;height:400px}h1{font-size:50px;color:#fff;text-shadow:5px 5px 5px #000;animation:2s infinite alternate zmat}@keyframes zmat{0%{transform:translateY(50px)}100%{transform:translateY(100px)}}`
+body{background-color:#3b3b3b;display:flex;justify-content:center;align-items:center;height:400px}h1{font-size:50px;color:#fff;text-shadow:5px 5px 5px #000;animation:2s infinite alternate zmat}@keyframes zmat{0%{transform:translateY(50px)}100%{transform:translateY(100px)}}
+/* zmat-cli styles */
+
+`
 
 const help =` Zmat-cli: help
 
@@ -31,4 +34,19 @@ const help =` Zmat-cli: help
         -v    : --version "      : => show Version
         -h    : --help "         : => show Help
         `
-module.exports = {html , css , help } ;
+
+const tailwindConfig = `/** @type {import('tailwindcss').Config} */
+module.exports = {
+    content: ["./*.{html,js}"],
+        theme: {
+        extend: {},
+    },
+    plugins: [],
+}
+`
+
+const tailwindInput = `@tailwind base;
+@tailwind components;
+@tailwind utilities;
+`
+module.exports = {html , css , help , tailwindConfig ,tailwindInput} ;
