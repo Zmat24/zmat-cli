@@ -1,6 +1,6 @@
 {
   "name": "zmat-cli",
-  "version": "0.1.0",
+  "version": "0.2.1",
   "description": "zmat Cli for every thing",
   "main": "src/app.js",
   "bin": {
