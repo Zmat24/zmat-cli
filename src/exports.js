@@ -1,16 +1,19 @@
 const cdn = require('./cdns');
 
 function GeneratorHtml(option){
-let bootstrap = false ;let tailwind = false ;let alpine = false ; 
+    let bootstrap = "" ; 
+    let tailwind = "" ; 
+    let alpine = "" ; 
 
     if(option){
         if(option.tailwind){
-            tailwind = true ; 
+            tailwind = `<script src='${cdn.tailwind}'></script> `  ; 
         }if(option.bootstrap){
-            bootstrap = true ; 
+            bootstrap = `<link rel="stylesheet" href='${cdn.bootstrap}'> ` ; 
         }if(option.alpine){
-            alpine = true ; 
+            alpine = `<script src='${cdn.alpine}'></script> ` ; 
         }
+
         let html = `<!-- created by zmat-cli -->
 
 <!DOCTYPE html>
@@ -20,9 +23,9 @@ let bootstrap = false ;let tailwind = false ;let alpine = false ;
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <title> 24 </title>
-    ${tailwind && `<script src='${cdn.tailwind}'></script> ` }
-    ${bootstrap &&  `<link rel="stylesheet" href='${cdn.bootstrap}'> `}
-    ${alpine && `<script src='${cdn.alpine}'></script> `}
+    ${tailwind}
+    ${bootstrap}
+    ${alpine}
     
 </head>
 <body>
@@ -51,17 +54,8 @@ body{background-color:#3b3b3b;display:flex;justify-content:center;align-items:ce
 const help =` Zmat-cli: help
 
         -site : --create-site    : => make new project
-        -v    : --version        : => show Version
-        -h    : --help           : => show Help
-        -t    : --tailwind       : => configure and install tailwindcss
-        
-        ** Use Cdn **
-        cdn [-options] -site
-
-        / Options /
-        Tailwind  => --tailwind  : -t  
-        Bootstrap => --bootstrap : -b
-        Alpine    => --Alpine    : -a
+        -v    : --version "      : => show Version
+        -h    : --help "         : => show Help
         `
 
 const tailwindConfig = `/** @type {import('tailwindcss').Config} */
