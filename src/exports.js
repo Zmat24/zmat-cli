@@ -1,7 +1,17 @@
 const cdn = require('./cdns');
-// const app = require('./app');
-const html = 
-`<!-- created by zmat-cli -->
+
+function GeneratorHtml(option){
+let bootstrap = false ;let tailwind = false ;let alpine = false ; 
+
+    if(option){
+        if(option.tailwind){
+            tailwind = true ; 
+        }if(option.bootstrap){
+            bootstrap = true ; 
+        }if(option.alpine){
+            alpine = true ; 
+        }
+        let html = `<!-- created by zmat-cli -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -10,9 +20,12 @@ const html =
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <title> 24 </title>
+    ${tailwind && `<script src='${cdn.tailwind}'></script> ` }
+    ${bootstrap &&  `<link rel="stylesheet" href='${cdn.bootstrap}'> `}
+    ${alpine && `<script src='${cdn.alpine}'></script> `}
+    
 </head>
 <body>
-
 
     <h1>created by zmat-cli</h1>
 
@@ -20,6 +33,13 @@ const html =
 </body>
 <script src="js/script.js"></script>
 </html>`
+
+        return html
+
+    }else{
+        console.log("Some Error be Coon Fix");
+    }
+}
 
 const css = 
 `/* created by zmat-cli */
@@ -31,8 +51,17 @@ body{background-color:#3b3b3b;display:flex;justify-content:center;align-items:ce
 const help =` Zmat-cli: help
 
         -site : --create-site    : => make new project
-        -v    : --version "      : => show Version
-        -h    : --help "         : => show Help
+        -v    : --version        : => show Version
+        -h    : --help           : => show Help
+        -t    : --tailwind       : => configure and install tailwindcss
+        
+        ** Use Cdn **
+        cdn [-options] -site
+
+        / Options /
+        Tailwind  => --tailwind  : -t  
+        Bootstrap => --bootstrap : -b
+        Alpine    => --Alpine    : -a
         `
 
 const tailwindConfig = `/** @type {import('tailwindcss').Config} */
@@ -49,4 +78,5 @@ const tailwindInput = `@tailwind base;
 @tailwind components;
 @tailwind utilities;
 `
-module.exports = {html , css , help , tailwindConfig ,tailwindInput} ;
+
+module.exports = {css , help , tailwindConfig ,tailwindInput , GeneratorHtml } ;

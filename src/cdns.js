@@ -1,1 +1,1 @@
-const cdn={tailwind:"https://cdn.tailwindcss.com",css24:"https://blokchainology.com/CDN/min24.css"};module.exports=cdn;
+const cdn={tailwind:"https://cdn.tailwindcss.com",bootstrap:"https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css",alpine:"https://unpkg.com/alpinejs"};module.exports=cdn;

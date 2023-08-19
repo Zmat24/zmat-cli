@@ -1,7 +1,9 @@
-# zmat-cli --> v.0.1.0
+# zmat-cli --> v.0.3.0
 
 - [Why Use zmat-cli](#Why-Use-zmat-cli)
 - [How To Use ?](#How-To-Use)
+- [Commands](#Commands)
+- [Use Cdn](#Use-CDN)
 <br>
 
 # Why-Use-Zmat-cli?
@@ -26,13 +28,16 @@ npm i zmat-cli
 ```CONSOLE
 npm i zmat-cli -g
 ```
-<br>
+<hr><br>
 
-| cammand       | short cut | decsription                 |
-|:--------------|:---------:|----------------------------:|
-| --version     | -v        | Show Version of Pakage      |
-| --help        | -h        | Show Help                   |
-| --create-site | -site     | Create File and Folder      |
+# Commands
+
+| cammand       | short cut | decsription                    |
+|:--------------|:---------:|-------------------------------:|
+| --version     | -v        | Show Version of Pakage         |
+| --help        | -h        | Show Help                      |
+| --create-site | -site     | Create File and Folder         |
+| --tailwind    | -t        | configure and install tailwind |
 
 <br>
 this command create some folders and filse to make coding easier for you
@@ -42,7 +47,7 @@ zmat-cli --create-site
 ```
 or
 ```CONSOLE
-zmat-cli --site
+zmat-cli -site
 ```
 <img src="https://blokchainology.com/zmat-cli/zmat-cli-site.png" alt="zmat-cli" />
 <hr><hr>
@@ -71,6 +76,31 @@ zmat-cli -h
 ```
 <img src="https://blokchainology.com/zmat-cli/zmat-cli-help.png" alt="zmat-cli" />
 <hr><Hr>
+<br>
+
+# Use CDN
+<p>Support `Bootstrap` & `Tailwind` & `Alpine`</p>
+
+```CONSOLE
+zmat-cli cdn [-options] -site
+```
+### Options =>
+| name      | command     | shortcut |
+|:---------:|:-----------:|:--------:|
+| Tailwind  | --tailwind  | -t       |
+| Bootstrap | --bootstrap | -b       |
+| Alpine    | --Alpine    | -a       |
+
+<=
+
+<br>
+
+# Run Again Tailwind
+
+```CONSOLE
+zmat-cli -t
+```
+<hr>
 <br>
 
 # and after that actually this is a POWER
