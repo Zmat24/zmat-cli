@@ -57,6 +57,14 @@ const help =` Zmat-cli: help
         -site : --create-site    : => make new project
         -v    : --version "      : => show Version
         -h    : --help "         : => show Help
+
+        ** Use Cdb **
+        cdn [options] -site
+
+        / options /
+        tailwind  => --tailwind  : -t
+        bootstrap => --bootstrap : -b
+        alpine    => --alpine    : -a
         `
 
 const tailwindConfig = `/** @type {import('tailwindcss').Config} */
