@@ -22,12 +22,11 @@ function GeneratorHtml(option){
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-
+    <title> 24 </title>
     ${tailwind}
     ${bootstrap}
     ${alpine}
-    
-    <title> 24 </title>
+
 </head>
 <body>
 
